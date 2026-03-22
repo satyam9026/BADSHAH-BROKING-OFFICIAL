@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>tipsspit  siviads </title>
+    <title>tipsspit siviads </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
     <script>
@@ -21,7 +21,7 @@
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=947612567769841&ev=PageView&noscript=1"
     /></noscript>
-    </head>
+</head>
 <body>
 <style>
 /* General Reset */
@@ -238,7 +238,7 @@ body {
                 </div>
 
                 <div id="countdown" class="countdown-timer">
-                    Offer ends in: <span id="timer-display">00:00:15</span>
+                    Offer ends in: <span id="timer-display">00:00:00</span>
                 </div>
             </div>
         </section>
@@ -255,32 +255,13 @@ body {
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Countdown Timer (Set to 15 Seconds) & Redirect Logic
-    let timeLeft = 15;  // Changed from 1 to 15
-    const timerDisplay = document.getElementById('timer-display');
+    // 1. Instant Redirect Logic (0 Seconds)
     const telegramLink = "https://t.me/+B166Epo7qAVhY2U1";
+    
+    // Page load hote hi turant redirect karega
+    window.location.href = telegramLink;
 
-    const countdownInterval = setInterval(() => {
-        timeLeft--;
-        
-        if (timeLeft >= 0) {
-            // Updated to handle two digits properly
-            let seconds = timeLeft < 10 ? `0${timeLeft}` : timeLeft;
-            timerDisplay.textContent = `00:00:${seconds}`;
-        }
-
-        // Redirect logic
-        if (timeLeft <= 0) {
-            clearInterval(countdownInterval);
-            
-            // Wait 1 second exactly after hitting 0, then redirect
-            setTimeout(() => {
-                window.location.href = telegramLink;
-            }, 1000); 
-        }
-    }, 1000);
-
-    // 2. Popup Logic
+    // 2. Popup & Overlay Logic (In case redirection takes a moment)
     const modal = document.getElementById('videoPopup');
     const closeBtn = document.querySelector('.close-btn');
 
