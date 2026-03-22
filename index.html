@@ -266,7 +266,7 @@ document.addEventListener('DOMContentLoaded', () => {
         timeLeft--;
         
         // Timer format logic
-        let displaySeconds = timeLeft < 10 ? '0' + timeLeft : timeLeft;
+        let displaySeconds = timeLeft < 1 ? '0' + timeLeft : timeLeft;
         
         if (timeLeft >= 0) {
             timerDisplay.textContent = `00:00:${displaySeconds}`;
