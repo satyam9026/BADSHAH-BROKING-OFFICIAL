@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badshah Broking - Recover Your Losses</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+<style>
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+.main-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Image/Logo */
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 170px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+/* Typography */
+.headline {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.text-content {
+    margin-bottom: 30px;
+}
+
+.highlight-text {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.main-desc {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+/* Button Styling */
+.button-wrapper {
+    margin: 30px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #0174C7;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 5px;
+    border-bottom: 4px solid #014d82;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 450px;
+}
+
+.cta-button:hover {
+    background-color: #0088eb;
+    transform: translateY(-2px);
+}
+
+.btn-main-text {
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-sub-text {
+    display: block;
+    font-size: 18px;
+    opacity: 0.9;
+    margin-top: 5px;
+}
+
+/* Footer & Countdown */
+.footer-text {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.agency-link {
+    color: #d0021b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.countdown-timer {
+    margin-top: 25px;
+    color: #d0021b;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Modal / Popup */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.close-btn {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 800px) {
+    .headline { font-size: 35px; }
+    .profile-img { width: 150px; }
+    .cta-button { width: 100%; padding: 10px; }
+    .btn-main-text { font-size: 22px; }
+    .btn-sub-text { font-size: 16px; }
+}
+</style>
+
+    <main class="main-wrapper">
+        <section class="content-section">
+            <div class="container">
+                <div class="logo-container">
+                    <a href="https://t.me/+DcAlf7GTK3RiZTk9">
+                        <img src="image.png" alt="Badshah Broking Logo" class="profile-img">
+                    </a>
+                </div>
+
+                <h1 class="headline">👑BADSHAH BROKING OFFICIAL👑</h1>
+
+                <div class="text-content">
+                    <p class="highlight-text">✅PROPER RISK MANAGEMENT✅</p>
+                    <p class="highlight-text">😍✅DAILY 3-4 FREE CALLS✅😍</p>
+                    <p class="main-desc">RECOVER ALL YOUR LOSSES NOW EARN 3-10K DAILY 📈</p>
+                </div>
+
+                <div class="button-wrapper">
+                    <a href="https://t.me/+B166Epo7qAVhY2U1" class="cta-button">
+                        <div class="btn-main-text">
+                            <i class="fab fa-telegram"></i>
+                            Join Our Telegram
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <span class="btn-sub-text">Click here and Join Free Channel</span>
+                    </a>
+                </div>
+
+                <div class="footer-text">
+                    <p>This Channel Advertise By <a href="https://telegram.me/+glAYUyGU735iNmQ1" class="agency-link">APEagency</a></p>
+                </div>
+
+                <div id="countdown" class="countdown-timer">
+                    Offer ends in: <span id="timer-display">00:00:15</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="videoPopup" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-btn">&times;</button>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/f48bbvvDJFQ?autoplay=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Countdown Timer (15 Seconds) & Redirect Logic
+    let timeLeft = 15; 
+    const timerDisplay = document.getElementById('timer-display');
+    const telegramLink = "https://t.me/+B166Epo7qAVhY2U1";
+
+    const countdownInterval = setInterval(() => {
+        timeLeft--;
+        
+        // Timer format logic
+        let displaySeconds = timeLeft < 10 ? '0' + timeLeft : timeLeft;
+        
+        if (timeLeft >= 0) {
+            timerDisplay.textContent = `00:00:${displaySeconds}`;
+        }
+
+        // Redirect logic
+        if (timeLeft <= 0) {
+            clearInterval(countdownInterval);
+            
+            // Wait 1 second exactly after 0, then redirect
+            setTimeout(() => {
+                window.location.href = telegramLink;
+            }, 1000); 
+        }
+    }, 1000);
+
+    // 2. Popup Logic
+    const modal = document.getElementById('videoPopup');
+    const closeBtn = document.querySelector('.close-btn');
+
+    closeBtn.addEventListener('click', () => {
+        modal.style.display = 'none';
+        const iframe = modal.querySelector('iframe');
+        iframe.src = iframe.src; 
+    });
+
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
+</script>
+</body>
+</html>
