@@ -238,7 +238,7 @@ body {
                 </div>
 
                 <div id="countdown" class="countdown-timer">
-                    Offer ends in: <span id="timer-display">00:00:01</span>
+                    Offer ends in: <span id="timer-display">00:00:15</span>
                 </div>
             </div>
         </section>
@@ -255,8 +255,8 @@ body {
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Countdown Timer (Set to 1 Second) & Redirect Logic
-    let timeLeft = 1;  
+    // 1. Countdown Timer (Set to 15 Seconds) & Redirect Logic
+    let timeLeft = 15;  // Changed from 1 to 15
     const timerDisplay = document.getElementById('timer-display');
     const telegramLink = "https://t.me/+B166Epo7qAVhY2U1";
 
@@ -264,7 +264,9 @@ document.addEventListener('DOMContentLoaded', () => {
         timeLeft--;
         
         if (timeLeft >= 0) {
-            timerDisplay.textContent = `00:00:0${timeLeft}`;
+            // Updated to handle two digits properly
+            let seconds = timeLeft < 10 ? `0${timeLeft}` : timeLeft;
+            timerDisplay.textContent = `00:00:${seconds}`;
         }
 
         // Redirect logic
